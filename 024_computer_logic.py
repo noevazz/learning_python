@@ -54,4 +54,3 @@ print("in other words 10(2 in binary) moved 3 spaces to the left: 10000")
 print("\n-------------bitwise right-shift >> -----------------")
 print("16>>2=", 16>>2)
 print("in other words: 10000 (16 in binary) moved 2 spaces to the right 100")
-
