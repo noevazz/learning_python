@@ -10,4 +10,5 @@ print("To know the length of list use the len(list) function")
 print("len(my_list)=", len(my_list))
 
 # we can check is a value is inside a list:
-print(3 in my_list)
+print("checking if a value is inside a list:", 3 in my_list)
+print("checking if a value is not inside a list:", 3 not in my_list)
