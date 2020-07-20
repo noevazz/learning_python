@@ -9,6 +9,7 @@ from extra.good import alpha
 print(extra.iota.FunI())
 print(alpha.FunA())
 
-from extra import iota
+from extra.iota import FunI
 
-print(iota.FunI())
+
+print(FunI())
