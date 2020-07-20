@@ -7,11 +7,22 @@ BaseException
 ├── KeyboardInterrupt
 └── Exception
 │   ├── ValueError
+│   │
+│   ├── AssertionError
+│   │
+│   ├── MemoryError           # a concrete exception raised when an operation cannot be completed due to a lack of free memory
+│   │   └── OverflowError     # a concrete exception raised when an operation produces a number too big to be successfully stored
+│   │ 
+│   └── StandardError
+│   │   └── ImportError       # a concrete exception raised when an import operation fails
+│   │
 │   ├── AritmericError
 │   │   └── ZeroDivisionError
+│   │   └── OverflowError     # a concrete exception raised when an operation produces a number too big to be successfully stored
+│   │
 │   └── LookupError
 │       └── IndexError
-│       └── KeyError
+│       └── KeyError          # a concrete exception raised when you try to access a collection's non-existent element (e.g., a dictionary's element)
 ...
 
     ZeroDivisionError is a special case of more a general exception class named ArithmeticError;
@@ -26,3 +37,7 @@ except ArithmeticError: # Note that we have replaced ZeroDivisionError with Arit
 
 # You can branch a ZeroDivisionError but it will never be reached beacuse python takes the first match
 # for that reason it is preferable to place specific exceptions at the begining
+
+
+# BTW:
+# except (unname) and except BaseException are the same
